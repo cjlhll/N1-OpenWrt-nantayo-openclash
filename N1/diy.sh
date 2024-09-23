@@ -16,4 +16,5 @@ git clone https://github.com/chenhw2/luci-app-aliddns.git package/luci-app-alidd
 
 # => openclash
 git clone https://github.com/vernesong/OpenClash.git --depth 1 package/openclash
+cat package/openclash/Makefile
 
