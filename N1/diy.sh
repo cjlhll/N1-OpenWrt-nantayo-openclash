@@ -16,5 +16,18 @@ git clone https://github.com/chenhw2/luci-app-aliddns.git package/luci-app-alidd
 
 # => openclash
 git clone https://github.com/vernesong/OpenClash.git --depth 1 package/openclash
-cat package/openclash/Makefile
+# 检查是否成功克隆，并列出文件
+if [ -d "package/openclash" ]; then
+    echo "OpenClash cloned successfully."
+    ls package/openclash  # 列出文件以确认 Makefile 的存在
+else
+    echo "Failed to clone OpenClash."
+    exit 1
+fi
 
+# 查看 Makefile
+if [ -f "package/openclash/Makefile" ]; then
+    cat package/openclash/Makefile
+else
+    echo "Makefile does not exist."
+fi
