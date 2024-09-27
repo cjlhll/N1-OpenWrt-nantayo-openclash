@@ -31,3 +31,8 @@ if [ -f "package/openclash/luci-app-openclash/Makefile" ]; then
 else
     echo "Makefile does not exist."
 fi
+
+
+#主题
+git clone https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
+sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' ./feeds/luci/collections/luci/Makefile
