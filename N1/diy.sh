@@ -20,3 +20,8 @@ git clone https://github.com/vernesong/OpenClash.git --depth 1 package/openclash
 # => mosdns
 git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
 git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
+
+
+#主题
+git clone https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
+sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' ./feeds/luci/collections/luci/Makefile
