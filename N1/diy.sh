@@ -18,8 +18,8 @@ git clone https://github.com/chenhw2/luci-app-aliddns.git package/luci-app-alidd
 git clone https://github.com/vernesong/OpenClash.git --depth 1 package/openclash
 
 # => mosdns
-git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
-git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
+#git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
+#git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
 
 
 #主题
