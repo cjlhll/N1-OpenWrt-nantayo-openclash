@@ -16,19 +16,3 @@ git clone https://github.com/chenhw2/luci-app-aliddns.git package/luci-app-alidd
 
 # => openclash
 git clone https://github.com/vernesong/OpenClash.git --depth 1 package/openclash
-
-# => mosdns
-#git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
-#git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
-
-
-#主题
-rm -rf feeds/luci/themes/luci-theme-bootstrap
-git clone https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
-sed -i 's/bootstrap/argon/g' feeds/luci/modules/luci-base/root/etc/config/luci
-
-sed -i 's/bootstrap/argon/g' package/feeds/luci/luci-light/Makefile
-sed -i 's/bootstrap/argon/g' package/feeds/luci/luci-nginx/Makefile
-sed -i 's/bootstrap/argon/g' package/feeds/luci/luci-ssl-nginx/Makefile
-
-cat feeds/luci/modules/luci-base/root/etc/config/luci
